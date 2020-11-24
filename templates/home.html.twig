@@ -1,0 +1,19 @@
+{# On herite de base.html.twig: On recupere la meme structure HTML et on remplace certains blocs #}
+
+{% extends "base.html.twig" %}
+
+{# On ecrase le bloc titre #}
+{% block title %}
+    Share It!
+{% endblock %}
+
+{% block body %}
+   <h1> Share It</h1>
+    <div>
+        <form action="" method="post">
+            <input type="file" id="docpicker" >
+            <button type="submit">Envoyer le fichier </button>
+        </form>
+    </div>
+   
+{% endblock %}
