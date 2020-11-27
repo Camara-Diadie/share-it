@@ -26,8 +26,8 @@ use Doctrine\DBAL\Connection;
         $result=$query->execute();
 
         //tableau associatif contenant les données du fichier, ou false si aucun resulta
-        $fichierData= $result->fetchAssociative();
-        if ($fichierData=== false){
+        $fichierData = $result->fetchAssociative();
+        if ($fichierData === false){
             return null;
         }
         // création d'une instatnce de fichier
